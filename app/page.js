@@ -14,12 +14,9 @@ export default function Home({ searchParams }) {
       <div>
         <Header />
       </div>
-      {/* Conteneur principal */}
       <div className="flex flex-row gap-6 mt-6 lg:flex-col">
-        {/* Menu */}
         <div className="mb-4 mt-8 flex flex-1 gap-4 overflow-auto max-lg:flex-col">
           <Menu currentFilter={currentFilter} filters={filters} />
-          {/* React Cards */}
           <div className="size-full overflow-auto">
             <div className="grid h-fit w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               {REACT_CARDS.filter((card) => {
